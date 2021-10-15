@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    animation-name: move;
+    animation-duration: 5s;
+    position: relative;
+    margin-top: 10px;
+    animation-play-state: paused; 
+}
+@keyframes move{
+    from{left: 0px;}
+    to {left: 200px;}
+} */
+
+.main div{
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    animation: myanimation 5s ;
+    animation-direction:alternate;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myanimation{
+    0% { background-color: chocolate; left: 0px; top: 0px;}
+    25% {background-color: cyan; left:200px;top: 0px;}
+    50% {background-color: darkblue; left: 200px;top: 200px;}
+    75% { background-color:yellowgreen;left: 0px;top: 200px;}
+    100% {background-color: violet;left: 0px;top: 0px;}
+}
+
+.element {
+    width: 200%;
+    height: 200%;
+    margin-top: 450px;
+    background-color: black;
+    animation: pulse 5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    100% {
+      background-color: #FF4136;
+    }
+}
+
+html,body{
+    height: 100px;
+}
